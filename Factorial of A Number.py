@@ -13,3 +13,12 @@ else:
         factorial = factorial * i
         i+=1
     print("The Factorial of",num,"is",factorial)
+
+    #Using Recursion...
+def factorial(n):
+    if(n==0 or n==1):
+        return 1
+    else:
+        return n*factorial(n-1)
+num =21
+print("Factorial of ",num,"is",factorial(num))
